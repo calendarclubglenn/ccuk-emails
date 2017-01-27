@@ -1,59 +1,210 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
+// // These are the styles to make some of the templates look extra nice.
+// // Feel free to remove these styles for production!
 
-// Body Styles 
-body,
-html, 
-.body {
-  background: #f3f3f3 !important;
-}
+// // Body Styles 
+// body,
+// html, 
+// .body {
+//   background: #f3f3f3 !important;
+// }
 
-.container.header {
-  background: #f3f3f3;
-}
+// .container.header {
+//   background: #f3f3f3;
+// }
 
-.body-drip {
-  border-top: 8px solid #663399;
-}
+// .body-drip {
+//   border-top: 8px solid #663399;
+// }
 
-// Full Width Headers
-.header {
-  background: #8a8a8a;
-}
+// // Full Width Headers
+// .header {
+//   background: #8a8a8a;
+// }
 
-.header .columns {
-  padding-bottom: 0;
-}
+// .header .columns {
+//   padding-bottom: 0;
+// }
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
+// .header p {
+//   color: #fff;
+//   padding-top: 15px;
+// }
 
-.header .wrapper-inner {
-  padding: 20px;
-}
+// .header .wrapper-inner {
+//   padding: 20px;
+// }
 
-.header .container {
-  background: transparent;
-}
+// .header .container {
+//   background: transparent;
+// }
 
 // Social Media
 table.button.facebook table td {
   background: #3B5998 !important;
   border-color: #3B5998;
+  font-size: 10px;
 }
 
 table.button.twitter table td {
   background: #1daced !important;
   border-color: #1daced;
+  font-size: 10px;
 }
 
-table.button.google table td {
+table.button.pinterest table td {
   background: #DB4A39 !important;
   border-color: #DB4A39;
+  font-size: 10px;
 }
 
-.wrapper.secondary {
-  background: #f3f3f3;
+// .wrapper.secondary {
+//   background: #f3f3f3;
+// }
+
+
+// gm added
+
+// grid
+th.no-bottom-padding {
+  padding-bottom: $column-padding-bottom-reset !important;
+}
+
+// typography
+h4.section-heading {
+  color: $section-heading-color;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.ccuk-red {
+  color: $ccuk-red;
+}
+
+.now-price {
+  color: darken($ccuk-purple, 5%);
+}
+
+.icon-red {
+  color: $ccuk-medium-red;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: $small-font-size;
+  color: $dark-gray;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+// images
+.img-max {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.logo-img-width {
+  width: 100% !important;
+  max-width: 160px !important;
+}
+
+.hero-img-width {
+  width: 100% !important;
+  max-width: 580px !important;
+}
+
+.half-hero-img-width {
+  width: 100% !important;
+  max-width: 290px !important;
+}
+
+.promo-img-width {
+  width: 100% !important;
+  max-width: 290px !important;
+}
+
+.product-img-width {
+  width: 100% !important;
+  max-width: 170px !important;
+}
+
+.box-1 {
+  background-color: $box-1-color;
+}
+
+.box-2 {
+  background-color: $box-2-color;
+}
+
+.box-3 {
+  background-color: $box-3-color;
+}
+
+.box-4 {
+  background-color: $box-4-color;
+}
+
+.box-4-alt-1 {
+  background-color: $box-4-alt-1-color;
+}
+
+// header
+.wrapper.header {
+  /* background: #ccc !important; */
+}
+
+.wrapper.header .columns {
+  padding-bottom: 0 !important;
+}
+
+.header p {
+  margin-bottom: 0 !important;
+  padding-top: 6px !important;
+}
+
+.wrapper.header .header-container {
+  /* background: #ccc !important; */
+}
+
+// menu
+.menu-item {
+  color: $dark-gray;
+  background-color: $light-gray;
+  border-left: 1px dotted $light-gray-border;
+  border-top: 1px dotted $light-gray-border;
+  border-right: 1px dotted $light-gray-border;
+  border-bottom: 1px dotted $light-gray-border;
+  a {
+    color: $dark-gray !important;
+  }
+}
+
+span.menu-item-link {
+  color: $dark-gray;
+  font-size: $small-font-size;
+}
+
+// special-notice
+.special-notice p {
+  color: $black !important;
+  font-size: $small-font-size;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+// hero
+// none required at the moment
+
+// product-recomms
+// none required at the moment
+
+// footer
+// none required at the moment
+
+.no-bullets {
+  list-style: none; /* Remove list bullets */
+  padding: 5px;
+  margin: 5px;
 }
