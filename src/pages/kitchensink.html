@@ -1,0 +1,299 @@
+<container>
+  <row>
+    <columns>
+      <h3>rows and columns</h3>
+    </columns>
+  </row>
+  <row>
+    <columns small="12" large="6">
+      <p>full width column in a non-collapsed row with small and large attributes - gutters are honoured.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>full width column in a non-collapsed row AND without small and large attributes which causes the 'expander' class to kick in (creates an extra th row) and fill the row width. i will do this as my default behaviour in marking up unless there are test issues.</p>
+    </columns>
+  </row>
+  <row class="collapse">
+    <p>this row uses the collapse class to remove the gutters from every column = great for side by side images (not great for stacking though maybe?). also causes issues in Outlook 2007, 2010, 2013, 2016, Gmail, Gmail App, Google Apps, litmus preview so keep distinct content in its own row.</p>
+    <columns>
+      <img src="http://placehold.it/300x150/cccccc/&text=these columns touch" alt="">
+    </columns>
+    <columns>
+      <img src="http://placehold.it/300x150/eeeeee/&text=these columns touch" alt="">
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>alignment</h3>
+    </columns>
+  </row>
+  <row>
+    <columns></columns>
+    <columns><p class="text-center">center column, equal widths, empty columns either side</p></columns>
+    <columns></columns>
+  </row>
+  <row>
+    <columns></columns>
+    <columns large="2"><p class="text-center">center column, size set for large only</p></columns>
+    <columns></columns>
+  </row>
+  <row>
+    <columns>
+      <p class="text-left">align left (default)</p>
+    </columns>
+    <columns>
+       <p class="text-center">align center</p>
+    </columns>
+    <columns>
+       <p class="text-right">align right</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p class="small-text-left">align left on small</p>
+    </columns>
+    <columns>
+       <p class="small-text-center">align center on small</p>
+    </columns>
+    <columns>
+       <p class="small-text-right">align right on small</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p class="text-center small-text-left">align center, small left</p>
+    </columns>
+    <columns>
+       <p class="text-right small-text-center">align right, small center</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <center>
+        <img src="http://placehold.it/200x200/cccccc/&text=center&text=center image" alt="">
+      </center>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>to center an image only on mobile clients, apply the .small-float-center class; a good use case would be centering an image smaller than the full column width on devices like an iPhone 5, iPhone 6, and Android 4.4</p>
+    </columns>
+  </row>
+  <row>
+    <columns small="12" large="3" class="large-offset-1">
+      <img class="small-float-center" src="http://placehold.it/200x200/cccccc/&text=small center" alt="">
+    </columns>
+    <columns small="12" large="8">
+      <h4 class="small-text-center">h4 element here</h4>
+      <p class="small-text-center">some supporting text here, long enough to test this chunk and see what happens when you go large and go small. observe offset here on large too.</p>
+    </columns>  
+  </row>
+  <row>
+    <columns>
+      <img class="float-left" src="http://placehold.it/200?text=left" alt="">
+      <img class="float-center" src="http://placehold.it/200?text=center" alt="">
+      <img class="float-right" src="http://placehold.it/200?text=right" alt="">
+    </columns>
+  </row>
+  <row>
+    <columns large="3" valign="top">
+      <img class="float-right" src="http://placehold.it/50" alt="align to top">
+    </columns>
+    <columns large="3" valign="bottom">
+      <h5>align to bottom</h5>
+    </columns>
+    <columns large="3" valign="middle">
+      <h4 style="margin-bottom: 0;" class="text-right">headline</h4>
+      <p style="margin-bottom: 0;" class="text-right subheader">sub-headline</p>
+    </columns>
+    <columns large="3" valign="middle">
+      <img class="small-float-center" src="http://placehold.it/250" alt="">
+    </columns> 
+  </row>
+  <row dir="rtl">
+    <columns large="4">
+      <center>
+        <img class="small-expanded" src="http://placehold.it/300x200/621" alt="">
+      </center>
+    </columns>
+    <columns large="8">
+      <h4>headline</h4>
+      <p>using the dir attribute and setting it rtl allows us to ensure that the image is atop at the small size (as opposed to underneath the text as it would have done by default.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <center>
+        <button href="#">center button</button>
+      </center>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <center>
+        <menu>
+          <item href="#">home link</item>
+          <item href="#">another link</item>
+          <item href="#">3rd menu link</item>
+        </menu>
+      </center>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>buttons</h3>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>a button must always have an href and a hash for the link, if not a link, as a minimum.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <button href="#" class="tiny">tiny button</button>
+      <button href="#" class="small">small button</button>
+      <button href="#">default button</button>
+      <button href="#" class="large">large button</button>
+      <button href="#" class="secondary">secondary (colour) button</button>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>a button can expand to the full width of its container whether at large or small size only.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <button href="#" class="expanded">expanded button</button>
+      <button href="#" class="small-expanded">expand small only</button>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>round off those corners with a couple of preset styles (but there are plenty of Saas variables in the settings file to affect the colour, size, font and more of buttons.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <button href="#" class="radius">radius</button>
+      <button href="#" class="rounded">round</button>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>visibility</h3>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>to show content only on mobile clients, add the class .hide-for-large to the element (can't see this in Chrom on my Windows PC so not sure it is working at all?); to show content only on desktop clients, add the class .show-for-large to the element (works on Chrome on Windows at least).</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <callout class="hide-for-large success">
+        <p>this callout will only appear on small screens.</p>
+      </callout>
+      <callout class="show-for-large alert">
+        <p>this callout will only appear on large screens.</p>
+      </callout>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>menu</h3>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>there are a few Sass variables to help with formatting the menu item including horiz versus vert layout at large and small sizes. note: vertical is not well supported until Outlook 2016 as per litmus previews.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <menu>
+        <item href="#">horiz 1</item>
+        <item href="#">horiz 2</item>
+        <item href="#">horiz 3</item>
+      </menu>
+      <menu class="vertical">
+        <item href="#">vert 1</item>
+        <item href="#">vert 2</item>
+        <item href="#">vert 3</item>
+      </menu>
+      <menu class="small-vertical">
+        <item href="#">small vert 1</item>
+        <item href="#">small vert 2</item>
+        <item href="#">small vert 3</item>
+      </menu>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>header / footer using a wrapper</h3>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>this is a great approach to a full width - yet fluid - header or footer which works well for the small size too (the image inside resizes well in line with the overall reducing width).</p>
+    </columns>
+  </row>
+  <style type="text/css">
+    .wrapper.header {
+      background: #8a8a8a !important;
+    }
+    .wrapper.header .columns {
+      padding-bottom: 0 !important;
+    }
+    .header p {
+      color: #fff !important;
+      font-weight: bold;
+      margin-bottom: 0 !important;
+    }
+    .wrapper.header .header-container {
+      background: #8a8a8a !important;
+    }
+  </style>
+  <wrapper class="header">
+    <spacer size="16"></spacer>
+    <center>
+      <container class="header-container">
+        <row class="collapse">
+          <columns small="6" valign="middle">
+            <img src="http://placehold.it/200x50/663399" alt="">
+          </columns>
+          <columns small="6" valign="middle">
+            <p class="text-right">text goes here</p>
+          </columns>
+        </row>
+      </container>
+    </center>
+    <spacer size="16"></spacer>
+  </wrapper>
+  <spacer size="50"></spacer>
+  <row>
+    <columns>
+      <h3>other</h3>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h4>handy main title style <small>with smaller text</small></h4>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>a vertical spacer can easily be added (in px) as below. you can use them between rows, containers or inside wrappers, rows, columns, and containers.</p>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <p>callout boxes / panels are easy to produce and edit their CSS properties (good for grabbing attention etc.) but i won't put them here as we may not even use them.</p>
+    </columns>
+  </row>
+  <row>
+    <p>final thought... this is a paragraph outside the columns tag = bad practice or just useful (needs testing)?</p>
+  </row>
+</container>
