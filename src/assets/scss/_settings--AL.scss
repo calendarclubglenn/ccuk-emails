@@ -23,7 +23,7 @@ $warning-color: #ffae00;
 $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
-$dark-gray: #777777; // gm edited
+$dark-gray: #999999; // ac edited
 $black: #333333; // gm edited
 $white: #fefefe;
 $pre-color: #ff6908;
@@ -70,10 +70,10 @@ $block-grid-gutter: $global-gutter;
 
 $global-font-color: $dark-gray; // gm edited
 $body-font-family: Helvetica, Arial, sans-serif;
-$global-font-weight: normal;
+$global-font-weight: normal; // ac edited
 $header-color: inherit;
-$global-line-height: 1.5; // gm edited
-$global-font-size: 14px; // gm edited
+$global-line-height: 1; // ac edited
+$global-font-size: 15px; // ac edited
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
@@ -145,8 +145,8 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // 7. Menu
 // -------
 
-$menu-item-padding: 10px;
-$menu-item-gutter: 10px;
+$menu-item-padding: 5px; // ac edited
+$menu-item-gutter: 5px; // ac edited
 $menu-item-color: $primary-color;
 
 // 8. Thumbnail
