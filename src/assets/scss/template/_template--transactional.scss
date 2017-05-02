@@ -1,0 +1,136 @@
+//.product-img-width {
+//  width: 100% !important;
+//  max-width: 200px !important;
+//}
+
+
+.product-img-width {
+	width: 100% !important;
+	max-width: 200px !important;
+	//padding: 10px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+  	width: 100% !important;
+  	max-width: 100% !important;
+	//padding: 0 !important;
+  }
+}
+
+
+
+
+// menu
+.menu-item {
+  color: $dark-gray;
+  // background-color: $light-gray;
+  // border-left: 1px dotted $light-gray-border;
+  // border-top: 1px dotted $light-gray-border;
+  // border-right: 1px dotted $light-gray-border;
+  // border-bottom: 1px dotted $light-gray-border;
+  a {
+    color: $dark-gray !important;
+  }
+}
+
+.transactional .logo {
+	width: 60%;
+	max-width: 60%;
+	margin: 0 auto;
+	
+	@media only screen and (max-width: #{$global-breakpoint}) {
+		width: 85% !important;
+		max-width: 85% !important;
+	}
+}
+
+
+.transactional h1 {
+	color: #000;
+	text-align: center;
+}
+
+.transactional h2 {
+	color: #000;
+	font-size: inherit; font-weight: bold;
+	text-align: center;
+	margin-top: 10px; margin-bottom: 10px;
+}
+
+
+.transactional strong {
+	color: #000;
+	font-weight: normal;
+	}
+
+	// word wrap fix
+	td {
+	word-break: break-word;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	border-collapse: collapse !important;
+	}
+	
+	.icon {width: 60px; margin-top: -40px;}
+	.icon--review {width: 240px; margin: 0; max-width: auto;}
+
+	p {line-height: 1.5; margin-top: 10px; margin-bottom: 10px;}
+	
+	.title {padding-left: 20px; padding-right: 20px;}
+
+	.summary th {padding-bottom: 0;}
+
+
+
+.border-bottom {border-bottom: 1px solid $light-gray-border;}
+.light-grey-bg {background-color: $light-gray}
+
+
+
+a.no-link {
+	color: $dark-gray; 
+	text-decoration: none; 
+}
+
+.total-cost {color: #000; line-height: 4;}
+
+.social-links .menu-item {border: none !important; background-color: transparent;}
+.social-icon {width: 30px; max-width: 30px;}
+
+//.padding-right {padding-right: 10px;}
+
+.greeting {
+	width: 55%;
+	max-width: 55%;
+	
+	@media only screen and (max-width: #{$global-breakpoint}) {
+		width: 75% !important;
+		max-width: 75% !important;
+	}
+}
+
+.product-wrapper {background-color: #ffffff;}
+
+.footer {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+
+
+
+.orderStatus {color: #E4AF00;}
+.orderStatusPill {padding: 5px; background-color: #E4AF00; color: #ffffff; border-radius: 5px;}
+
+
+
+
+table.button--review {
+	margin-left: 20px;
+	@media only screen and (max-width: #{$global-breakpoint}) {margin-bottom :20px !important;}
+}
+
