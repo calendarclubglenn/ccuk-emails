@@ -1,7 +1,13 @@
 @import 'settings';
-@import 'settings--transactional';
-
+// *** GM IMPORTANT MESSAGE ***
+// IF WORKING ON TRANSACTIONAL EMAILS, UNCOMMENT ALL THE FOLLOWING LINE BUT
+// COMMENT OUT WHEN WORKING ON THE PROMO EMAILS. NEEDS CONSOLIDATING IDEALLY
+// ****************************
+// @import 'settings--transactional';
 @import 'foundation-emails';
-
 @import 'template/template';
-@import 'template/template--transactional';
+// *** GM IMPORTANT MESSAGE ***
+// IF WORKING ON TRANSACTIONAL EMAILS, UNCOMMENT ALL THE FOLLOWING LINE BUT
+// COMMENT OUT WHEN WORKING ON THE PROMO EMAILS. NEEDS CONSOLIDATING IDEALLY
+// ****************************
+// @import 'template/template--transactional';

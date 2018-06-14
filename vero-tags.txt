@@ -1,0 +1,5 @@
+{{user.first_name}}
+{{url.unsubscribe_link}}
+{{url.permalink_link}}
+
+{{user.email|encode}}
